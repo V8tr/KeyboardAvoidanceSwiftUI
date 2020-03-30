@@ -9,5 +9,5 @@
 A sample project showing how to move SwiftUI view up when keyboard appears.
 
 <p align="center">
-  <img src="https://github.com/V8tr/ModernMVVM/blob/master/demo.gif" alt="Modern MVVM iOS App Architecture with Combine and SwiftUI"/>
+  <img src="https://github.com/V8tr/KeyboardAvoidanceSwiftUI/blob/master/demo.gif" alt="How to manage the iOS system keyboard when it covers a SwiftUI text field"/>
 </p>
