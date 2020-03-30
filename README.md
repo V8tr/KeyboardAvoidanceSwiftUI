@@ -1,6 +1,6 @@
 ## Article related to this project
 
-- [Keyboard Avoidance for SwiftUI Views](https://www.vadimbulavin.com/how-to-move-swiftui-view-text-field-up-when-keyboard-appears/).
+- [Keyboard Avoidance for SwiftUI Views](https://www.vadimbulavin.com/how-to-move-swiftui-view-when-keyboard-covers-text-field/).
 
 ---
 
