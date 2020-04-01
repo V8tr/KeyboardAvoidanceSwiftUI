@@ -21,7 +21,7 @@ struct KeyboardAdaptive: ViewModifier {
                     let focusedTextInputBottom = UIResponder.currentFirstResponder?.globalFrame?.maxY ?? 0
                     self.bottomPadding = max(0, focusedTextInputBottom - keyboardTop - geometry.safeAreaInsets.bottom)
             }
-            .animation(.easeOut(duration: 0.16)) // From https://stackoverflow.com/a/58242249/6870041
+            .animation(.easeOut(duration: 0.16))
         }
     }
 }

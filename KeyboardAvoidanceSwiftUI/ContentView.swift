@@ -15,17 +15,17 @@ struct ContentView: View {
         TabView {
             OverlapDemo()
                 .tabItem { Text("Overlap") }
-            
+
             WithoutOverlapDemo()
                 .tabItem { Text("No Overlap") }
+
         }
     }
 }
 
 struct OverlapDemo: View {
     @State private var text = ""
-    @State private var keyboardHeight: CGFloat = 0
-
+    
     var body: some View {
         VStack {
             Spacer()
@@ -34,14 +34,13 @@ struct OverlapDemo: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
         .padding()
-        .padding(.bottom, keyboardHeight)
-        .onReceive(Publishers.keyboardHeight) { self.keyboardHeight = $0 }
+        .keyboardAdaptive()
     }
 }
 
 struct WithoutOverlapDemo: View {
     @State private var text = ""
-
+    
     var body: some View {
         VStack {
             Spacer()
