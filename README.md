@@ -22,7 +22,7 @@ struct ContentView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
         }
         .padding()
-        .keyboardAdaptive()
+        .keyboardAdaptive() <--- Apply the view modifier
     }
 }
 ````
