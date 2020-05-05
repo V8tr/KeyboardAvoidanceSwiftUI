@@ -32,3 +32,5 @@ Result:
 <p align="center">
   <img src="https://github.com/V8tr/KeyboardAvoidanceSwiftUI/blob/master/demo.gif" alt="How to manage the iOS system keyboard when it covers a SwiftUI text field"/>
 </p>
+
+> Note that the `KeyboardAdaptive` modifier wraps your view in a `GeometryReader`, which attempts to fill all the available space, potentially increasing content view size. Thanks to [Coffeemate](https://github.com/Coffeemate) for [pointing this out](https://github.com/V8tr/KeyboardAvoidanceSwiftUI/issues/4#issuecomment-620546453).
