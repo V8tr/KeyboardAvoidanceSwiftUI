@@ -16,7 +16,8 @@ struct KeyboardAdaptive: ViewModifier {
 
     func body(content: Content) -> some View {
         GeometryReader { geometry in
-            content
+            Color.clear
+                .overlay(content)
                 .padding(.bottom, self.bottomPadding)
                 .onReceive(Publishers.keyboardHeight) { keyboardHeight in
                     let keyboardTop = geometry.frame(in: .global).height - keyboardHeight
